@@ -38,7 +38,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    /*position: fixed; !* Фиксированное положение внизу *!*/
     bottom: 0;
     width: 100%;
 }
@@ -47,14 +46,14 @@ footer {
 .hero {
     text-align: center;
     margin-bottom: 20px;
-    position: relative; /* Added for absolute positioning of hero-text */
+    position: relative;
 }
 
 .hero img {
     width: 100%;
     max-height: 400px;
     object-fit: cover;
-    filter: brightness(80%); /* Slightly darken the image */
+    filter: brightness(80%);
 }
 
 .hero-text {
@@ -65,8 +64,8 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%; /* Added to constrain the width of the hero text */
-    max-width: 600px; /* Added maximum width for readability */
+    width: 80%;
+    max-width: 600px;
 }
 
 .button {
@@ -75,6 +74,8 @@ footer {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    margin-top: 20px; /* Added margin to push the button down */
+    display: inline-block; /* Added to allow margin-top to work */
 }
 
 .highlights {
