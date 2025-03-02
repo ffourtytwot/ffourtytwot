@@ -47,12 +47,14 @@ footer {
 .hero {
     text-align: center;
     margin-bottom: 20px;
+    position: relative; /* Added for absolute positioning of hero-text */
 }
 
 .hero img {
     width: 100%;
     max-height: 400px;
     object-fit: cover;
+    filter: brightness(80%); /* Slightly darken the image */
 }
 
 .hero-text {
@@ -63,6 +65,8 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 80%; /* Added to constrain the width of the hero text */
+    max-width: 600px; /* Added maximum width for readability */
 }
 
 .button {
